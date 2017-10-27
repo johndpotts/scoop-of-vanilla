@@ -22,7 +22,8 @@
 
 <body>
   <header>
-    <h1>Some vanilla Javascript goodness</h1>
+    <h1>"A Scoop of Vanilla"- some vanilla js goodness</h1>
+
   </header>
 <h2>Validating like a boss</h2>
 <p>1. This form uses a function to validate input. Please enter a number from 1-10.</p>
@@ -34,20 +35,22 @@
 <p id="js-number-check-result"></p>
 
 <hr/>
-<p>2. This one uses the html 'required' tag to make sure it's not blank.</p>
+<p>2. This one uses the html 'required' tag to make sure it's not blank... no JS required.</p>
 <form action="http://thumbsandammo.blogspot.com/">
   <input type="text" name="fname" required>
   <input type="submit" value="Submit">
 </form>
 <hr/>
-<p>3. This one uses a JS function to acheve the same result as #2.</p>
+<p>3. This one uses a JS function to acheve the same basic result as #2.</p>
 <form name="myForm" action="http://thumbsandammo.blogspot.com/"
 onsubmit="return validateForm()" method="get">
 Name: <input type="text" name="fname">
 <input type="submit" value="Submit">
 </form>
 <hr/>
-<p>4. This shows how you can add an event listener to a form to do something on input.</p>
+<hr/>
+<h2>Somebody's Listening!</h2>
+<p>4. This shows how you can add an event listener to a form to do something on input. Go ahead... type something in!</p>
 <input type="text" id="listener" value="" />
 <p id="listener-result"></p>
 
@@ -64,6 +67,15 @@ Name: <input type="text" name="fname">
 </ul>
 
 
+<h2>Creation, Deletion, and Modification</h2>
+<p>#6. Dynamically creating an element- click the button below and a div with text will be dynamically created and inserted into the document.</p>
+
+<button id = "make-a-div" onclick="addElement()">Make a div</button>
+
+<p>#7. Deleting an element- click on the div below to remove it.</p>
+<div id = "red-box" onclick="deleteMe()">Delete me!</div>
+<p>#8.Modifying an element- click on the div below to dynamically resize it. </p>
+  <div id = "blue-box" onclick="resizeMe()">Make me bigger!</div>
 <footer>
 </footer>
 <script src="js/scripts.js"></script>

@@ -7,3 +7,27 @@ color:green;
 li{
   cursor:pointer;
 }
+
+#red-box{
+  background-color:red;
+  color:white;
+  font-size:20px;
+  text-align:center;
+  height:40px;
+  width: 100px;
+  cursor:pointer;
+  font-family: sans-serif;
+  line-height:40px;
+}
+
+#blue-box{
+  background-color:blue;
+  color:white;
+  font-size:20px;
+  text-align:center;
+  height:40px;
+  width: 180px;
+  cursor:pointer;
+  font-family: sans-serif;
+  line-height:40px;
+}

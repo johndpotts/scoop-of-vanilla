@@ -43,3 +43,26 @@ function(name){
   alert(name.target.innerHTML);
 }
 );
+
+//---------------------------------
+/*#6- add an element dynamically*/
+function addElement(){
+var newDiv = document.createElement('div');
+newDiv.innerHTML = "Bonjour!";
+newDiv.setAttribute('style',' background-color:green; color:white; font-size:20px; text-align:center; margin:15px;height:40px; width: 100px; cursor:pointer; font-family: sans-serif; line-height:40px;');
+var theButtonToPutItAbove = document.getElementById('make-a-div');
+document.body.insertBefore(newDiv,theButtonToPutItAbove);
+
+}
+
+//---------------------------------
+/*#7- delete an element dynamically*/
+function deleteMe(){
+var element = document.getElementById("red-box");
+element.parentNode.removeChild(element);
+}
+
+function resizeMe(){
+var div = document.getElementById("blue-box");
+div.setAttribute('style', 'height:100px;width:300px;')
+}
