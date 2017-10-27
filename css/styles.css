@@ -3,3 +3,7 @@ font-family:impact;
 font-size: 30px;
 color:green;
 }
+
+li{
+  cursor:pointer;
+}

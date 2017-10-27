@@ -26,7 +26,7 @@ function validateNumber() {
 }
 
 //-----------------------------------------------
-/* event listener */
+/* #4- event listener */
 document.getElementById("listener").addEventListener('input', doThing);
 
 /* function */
@@ -34,3 +34,12 @@ function doThing(){
   var result = document.getElementById("listener-result");
   result.innerHTML = this.value;
 }
+
+//----------------------------------
+/*#5- event delegation in vanilla js*/
+var ul = document.getElementsByTagName('ul')
+ul[0].addEventListener('click',
+function(name){
+  alert(name.target.innerHTML);
+}
+);
