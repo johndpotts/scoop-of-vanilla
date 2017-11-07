@@ -66,3 +66,16 @@ function resizeMe(){
 var div = document.getElementById("blue-box");
 div.setAttribute('style', 'height:100px;width:300px;')
 }
+
+//-------------------------------
+/* #8- grab range */
+// grab <input id="range-example" type="range" min="0" max="5" step="1"> from the page
+var rangeInput = document.querySelector('input#range-example');
+
+// grab <p id="output"></p> to display the output
+var output = document.querySelector('p#output');
+
+// update the display when the range changes
+rangeInput.onchange = function() {
+    output.innerHTML = this.value;
+};
